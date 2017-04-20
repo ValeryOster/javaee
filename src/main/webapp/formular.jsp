@@ -12,7 +12,7 @@
 
 <div>
 
-    <form action="HalloServlet" method="post">
+    <form action="/HalloServlet" method="post">
 
         <div class="form-group"> <!-- Name field -->
             <label class="control-label " for="name">Name</label>
