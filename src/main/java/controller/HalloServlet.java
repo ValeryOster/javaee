@@ -1,10 +1,17 @@
 package controller;
 
-import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
+import javax.ejb.EJB;
+import javax.servlet.annotation.WebServlet;
+
+import controller.forms.FormularDAO;
 
 @WebServlet
 public class HalloServlet extends javax.servlet.http.HttpServlet {
+
+    @EJB
+    FormularDAO formularDAO;
+
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         System.out.println(request.getParameter("name"));
         System.out.println(request.getParameter("email"));
