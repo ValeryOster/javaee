@@ -1,0 +1,3 @@
+Root User: admin96FBahT
+Root Password: GWf5-VJtz5LJ
+Database Name: javaee

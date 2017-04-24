@@ -1,14 +1,4 @@
-    <jsp:include page="template/header.jsp"/>
-
-                <li><a href="index.jsp">Home</a></li>
-                <li class="active"><a href="about.jsp">About</a></li>
-                <li><a href="links.jsp">Links</a></li>
-                <li><a href="formular.jsp">Formular</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-</nav>
-
+<jsp:include page="template/header.jsp"/>
 
 <div class="row">
     <div class="col-md-2">
@@ -27,6 +17,9 @@
     </div>
 </div>
 
-
+<script>
+    if(window.jQuery)
+        $( "#menuabout" ).parent().addClass("active");
+</script>
 
 <jsp:include page="template/footer.jsp"/>
