@@ -9,42 +9,16 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Navbar Template for Bootstrap</title>
+    <title>JavaEE Testing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 
 <body>
-<script>
-    $( "#menuhome" ).click(function() {
-        $( "#menuhome" ).parent().addClass("active");
-        $( "#menuabout" ).parent().removeClass("active");
-        $( "#menulinks" ).parent().removeClass("active");
-        $( "#menuhomework" ).parent().removeClass("active");
-    });
-    $( "#menuabout" ).click(function() {
-        $( "#menuhome" ).parent().removeClass("active");
-        $( "#menuabout" ).parent().addClass("active");
-        $( "#menulinks" ).parent().removeClass("active");
-        $( "#menuhomework" ).parent().removeClass("active");
-    });
-    $( "#menulinks" ).click(function() {
-        $( "#menuhome" ).parent().removeClass("active");
-        $( "#menuabout" ).parent().removeClass("active");
-        $( "#menulinks" ).parent().addClass("active");
-        $( "#menuhomework" ).parent().removeClass("active");
-    });
-    $( "#menuhomework" ).click(function() {
-        $( "#menuhome" ).parent().removeClass("active");
-        $( "#menuabout" ).parent().removeClass("active");
-        $( "#menulinks" ).parent().removeClass("active");
-        $( "#menuhomework" ).parent().addClass("active");
-    });
-</script>
+
 <div class="container">
 
     <!-- Static navbar -->
@@ -71,7 +45,7 @@
                     <a id="menuhomework" href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Homework <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="homework.jsp">Alle</a></li>
-                        <li><a href="#">Aufgabe 1</a></li>
+                        <li><a href="aufgabe1.jsp">Aufgabe 1</a></li>
                     </ul>
                 </li>
             </ul>

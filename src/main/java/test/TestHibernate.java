@@ -1,6 +1,6 @@
 package test;
 
-import controller.entities.Person;
+import model.entities.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

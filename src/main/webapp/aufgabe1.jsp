@@ -1,33 +1,31 @@
 
-<form action="/HalloServlet" method="post">
+    <title><jsp:include page="template/header.jsp"/>
 
-    <div class="form-group"> <!-- Name field -->
-        <label class="control-label " for="name">Name</label>
-        <input class="form-control" id="name" name="name" type="text" required="true"/>
-    </div>
+        <div>
 
-    <div class="form-group"> <!-- Name field -->
-        <label class="control-label " for="vorname">Name</label>
-        <input class="form-control" id="vorname" name="name" type="text"/>
-    </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#aufgabe1">Person anlegen</a></li>
+                <li><a data-toggle="tab" href="#aufgabe2">Person verwalten</a></li>
 
-    <div class="form-group"> <!-- Email field -->
-        <label class="control-label requiredField" for="email">Email<span class="asteriskField">*</span></label>
-        <input class="form-control" id="email" name="email" type="text" required="true"/>
-    </div>
+            </ul>
 
-    <div class="form-group"> <!-- Subject field -->
-        <label class="control-label " for="subject">Subject</label>
-        <input class="form-control" id="subject" name="subject" type="text"/>
-    </div>
+            <div class="tab-content">
+                <div id="aufgabe1" class="tab-pane fade in active">
+                    <h3>Neue Person anlegen</h3>
+                    <jsp:include page="PersonAnlegen.jsp"/>
+                </div>
+                <div id="aufgabe2" class="tab-pane fade">
+                    <h3>Person verwalten.</h3>
+                    <jsp:include page="PersonVerwalten.jsp"/>
+                </div>
+            </div>
 
-    <div class="form-group"> <!-- Message field -->
-        <label class="control-label " for="message">Message</label>
-        <textarea class="form-control" cols="40" id="message" name="message" rows="10"required="true"></textarea>
-    </div>
+        </div>
+        <script>
+            if(window.jQuery)
+                $( "#menuhomework" ).parent().addClass("active");
+        </script>
 
-    <div class="form-group">
-        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
-    </div>
 
-</form>
+        <jsp:include page="template/footer.jsp"/></title>
+

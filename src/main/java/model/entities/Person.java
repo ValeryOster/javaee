@@ -1,4 +1,4 @@
-package controller.entities;
+package model.entities;
 
 import javax.persistence.*;
 
